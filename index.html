@@ -1,91 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-    <script>
-		function redirigerProjet(url) {
-		  window.location.href = url;
-		}
-	  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mon Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	<div id="header">
-		<h1>Maxence Autefault</h1>
+	<nav>
+		<h1>Bienvenue dans mon Portfolio</h1>
 		<ul>
-			<li><a href="#projets-Java">Projets Java</a></li>
-            <li><a href="#projets-web">Projets Web</a></li>
-            <li><a href="#projets-BD">Projets Base de Données</a></li>
-			<li><a href="#contact">Me contacter</a></li>
+			<li><a href="#presentation">Présentation</a></li>
+			<li><a href="#projets">Projets</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
-	</div>
-	<div id="image">
-	</div>
-	<div id="main">
-		<h1>Bienvenue sur mon portfolio</h1>
-		<p>Ce portfolio a pour but de présenter mes projets et mes compétences en matière de développement web et de programmation en tout genre. N'hésitez pas à me contacter si vous avez des questions ou si vous êtes intéressé par une collaboration.</p>
-	</div>
-	<div id="transition">
-		<h2>Mes Projets</h2>
-	</div>
-    <section id="projets-Java">
-			<h2>Projets Java</h2>
-			<div class="projets">
-				<div class="projet"  onclick="redirigerProjet('odomo.html')">
-					<h3>Odomo</h3>
-					<p>Complément de code pour une station méteo</p>
-				</div>
-				<div class="projet">
-					<h3>Projet 2</h3>
-					<p>Description du projet 2</p>
-				</div>            
-			</div>
+	</nav>
+
+	<section id="presentation">
+		<div class="left">
+			<img src="monimage.jpg" alt="Ma photo">
+		</div>
+		<div class="right">
+			<h2>Présentation</h2>
+			<p>Bonjour je m'apelle Maxence Autefault et je suis étudiant en Informatique à l'Université de Bordeaux, 
+                ce site à pour but de présenter les différents projets que j'ai pu effectuer. Si vous interessez par mon profil , 
+                veuillez me contactez avec le formulaire situez en bas de la page</p>
+		</div>
 	</section>
-	
-	<section id="projets-web">
-			<h2>Projets Web</h2>
-			<div class="projets">
-				<div class="projet">
-					<h3>Projet 1</h3>
-					<p>Description du projet 1</p>
-				</div>
-				<div class="projet">
-					<h3>Projet 2</h3>
-					<p>Description du projet 2</p>
-				</div>
-				<div class="projet">
-					<h3>Projet 3</h3>
-					<p>Description du projet 3</p>
-				</div>
+
+	<section id="projets">
+		<h3>Odomo (java)</h3>
+		<div class="projet">
+			<img src="montagne_odomo.jpg" alt="Odomo">
+			<div class="description">
+				<p>Voici un projet java dont l'objectif était d'améliorer le code d'une station météo</p>
+				<p>Les difficultés rencontrer : Compréhentions du code initiale</p>
+				<img src="odomo_1.jpg" alt="Odomo">
 			</div>
-	</section>
-	
-	<section id="projets-BD">
-			<h2>Projets Base de Donnée</h2>
-			<div class="projets">
-				<div class="projet">
-					<h3>Projet 1</h3>
-					<p>Description du projet 1</p>
-				</div>
-				<div class="projet">
-					<h3>Projet 2</h3>
-					<p>Description du projet 2</p>
-				</div>
-				<div class="projet">
-					<h3>Projet 3</h3>
-					<p>Description du projet 3</p>
-				</div>
-                <div class="projet">
-					<h3>Projet 4</h3>
-					<p>Description du projet 4</p>
-				</div>
+		</div>
+		<h3>Installation de poste</h3>
+		<div class="projet">
+			<img src="Nextcloud_Logo.jpg " alt="NextCloud">
+			<div class="description">
+				<p>Voici le projet instllation de poste, le but était de configurer un réseaux en adéquation avec la demande client.</p>
+				<p>Les difficultés rencontrer : Adressage IP</p>
+				<img src="InstallationPoste.jpg" alt="Nextcloud">
 			</div>
+		</div>
 	</section>
-    <footer id="contact">
-		<a href="">Me contacter</a>
-	</footer>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<form>
+			<label for="name">Nom</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
 </body>
 </html>

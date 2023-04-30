@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  nav {
+    background-color: #fff;
+    color : #333;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav h1 {
+    width : 50%;
+    text-align: center;
+    font-size:200%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #f37373;
+  }
+  
+#presentation {
+  margin-top: 10%;
+}
+
+  section {
+    padding: 4rem;
+  }
+  
+  .left {
+    float: left;
+    width: 30%;
+  }
+  
+  .right {
+    float: right;
+    width: 70%;
+  }
+
+  #projets {
+    width : 50%;
+    z-index: 0;
+  }
+  #projets h3 {
+    margin-left: 3rem;
+    position: relative;
+  }
+  
+  .projet {
+    margin-left: 3rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 3rem;
+  }
+  
+  .projet img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .description img {
+    width : 70%;
+  }
+
+  
+  .projet:hover .description {
+    opacity: 1;
+  }  
+
+
+  /* Styles pour les appareils mobiles */
+@media only screen and (max-width: 767px) {
+
+    /* Menu de navigation */
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.5rem 0;
+    }
+  
+    /* Présentation */
+    .left {
+      float: none;
+      width: 100%;
+    }
+  
+    .right {
+      float: none;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  
+    /* Projets */
+    .projet {
+      width: 100%;
+      margin: 2rem 0;
+    }
+  
+    /* Formulaire de contact */
+    form {
+      margin-top: 2rem;
+    }
+  
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    input[type="submit"] {
+      margin-top: 1rem;
+    }
+  
+  }  
