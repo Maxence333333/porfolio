@@ -8,50 +8,82 @@
 	<script src="script.js"></script>
 </head>
 <body>
+	<section id="Menu"></section>
 	<nav>
 		<h1>Bienvenue dans mon Portfolio</h1>
 		<ul>
-			<li><a href="#presentation">Présentation</a></li>
-			<li><a href="#projets">Projets</a></li>
+			<li><a href="#Menu">Présentation</a></li>
+			<li><a href="#Projet">Projets</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
 	<section id="presentation">
 		<div class="left">
-			<img src="monimage.jpg" alt="Ma photo">
+			<img src="Image_Profil.jpg" alt="Ma photo">
 		</div>
 		<div class="right">
-			<h2>Présentation</h2>
+			<h1>Présentation</h1>
 			<p>Bonjour je m'apelle Maxence Autefault et je suis étudiant en Informatique à l'Université de Bordeaux, 
                 ce site à pour but de présenter les différents projets que j'ai pu effectuer. Si vous interessez par mon profil , 
-                veuillez me contactez avec le formulaire situez en bas de la page</p>
+                veuillez me contactez avec le formulaire situez en bas de la page ou en cliquant sur l'onglet "Contacter" dans le menu !</p>
 		</div>
 	</section>
 
 	<section id="projets">
-		<h3>Odomo (java)</h3>
+		<section id="Projet"></section>
+		<h1>Projets</h1>
+		<h2>Odomo (java)</h2>
 		<div class="projet">
 			<img src="montagne_odomo.jpg" alt="Odomo">
 			<div class="description">
 				<p>Voici un projet java dont l'objectif était d'améliorer le code d'une station météo</p>
-				<p>Les difficultés rencontrer : Compréhentions du code initiale</p>
+				<p><b><u>Les difficultés rencontrer :</u></b> Compréhentions du code initiale</p>
+				<p><b><u>Mon ressenti :</u></b> Ce Projet était mon premier projet Java et il était assez compliquer pour moi de comprendre 
+					le code néant moins, j'ai pris beaucoup de plaisir à développer mes compétences en Java.</p>
 				<img src="odomo_1.jpg" alt="Odomo">
 			</div>
 		</div>
-		<h3>Installation de poste</h3>
+
+		<h2>Analyse ESN (sans language)</h2>
+		<div class="projet">
+			<img src="atos.jpg" alt="Atos">
+			<div class="description">
+				<p>Voici un projet visant à analyser et présenter une entreprise d'un point de vue externe</p>
+				<p><b><u>Les difficultés rencontrer :</u></b> Difficultés à trouver des informations</p>
+				<p><b><u>Mon ressenti :</u></b> Ce Projet était un projet sans language de programation 
+					et ma permis de développer mes compétences en travail d'équipe</p>
+				<a href="AnalyseAtos.pdf">Lien vers le pdf de l'analyse</a>
+			</div>
+		</div>
+
+		<h2>Projet WEB (html et css)</h2>
+		<div class="projet">
+			<img src="HTML_CSS.jpg" alt="Atos">
+			<div class="description">
+				<p>Voici un projet visant à créer un site pour cibler un persona fictif.</p>
+				<p><b><u>Les difficultés rencontrer :</u></b> Difficultés du design des différentes pages.</p>
+				<p><b><u>Mon ressenti :</u></b> Ce Projet était un projet était intéressant puisque, créer du code en HTML et en CSS 
+					n'est pas compliquer. Cela ma permis de développer mes compétences en création de page web</p>
+					<img src="Web_Atos.jpg" alt="Web_Atos">
+			</div>
+		</div>
+
+		<h2>Installation de poste(shell)</h2>
 		<div class="projet">
 			<img src="Nextcloud_Logo.jpg " alt="NextCloud">
 			<div class="description">
-				<p>Voici le projet instllation de poste, le but était de configurer un réseaux en adéquation avec la demande client.</p>
-				<p>Les difficultés rencontrer : Adressage IP</p>
+				<p>Voici le projet installation de poste, le but était de configurer un réseaux en adéquation avec la demande client.</p>
+				<p><b><u>Les difficultés rencontrer :</u></b> Adressage IP</p>
 				<img src="InstallationPoste.jpg" alt="Nextcloud">
 			</div>
 		</div>
 	</section>
 
+
+
 	<section id="contact">
-		<h2>Contact</h2>
+		<h1>Contact</h1>
 		<form>
 			<label for="name">Nom</label>
 			<input type="text" id="name" name="name" required>

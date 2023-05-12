@@ -19,7 +19,7 @@ body {
   nav h1 {
     width : 50%;
     text-align: center;
-    font-size:200%;
+    font-size:300%;
   }
   
   nav ul {
@@ -33,23 +33,41 @@ body {
   
   nav li {
     margin: 0 1rem;
+    font-size: 150%;
+  }
+  nav li a{
+    padding :1rem;
   }
   
   nav a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   
   nav a:hover {
-    color: #f37373;
+    color: #fff;
+    background-color: #646363;
   }
   
 #presentation {
   margin-top: 10%;
 }
 
+#presentation h1 {
+  font-size: 250%;
+}
+
+#presentation p {
+  width: 70%;
+  font-size: 150%;
+}
+
+#presentation img {
+  width :50%;
+  margin-left: 30%;
+}
   section {
     padding: 4rem;
   }
@@ -67,6 +85,7 @@ body {
   #projets {
     width : 50%;
     z-index: 0;
+    margin-top: 15%;
   }
   #projets h3 {
     margin-left: 3rem;
@@ -77,13 +96,24 @@ body {
     margin-left: 3rem;
     position: relative;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     margin-bottom: 3rem;
   }
-  
+
+  #projets h1{
+    font-size: 250%;
+
+  }
+
   .projet img {
     width: 100%;
     height: auto;
+  }
+  .projet p {
+    width : 50%
+  }
+  .projet a {
+    color : rgb(63, 133, 194);
   }
   
   .description {
@@ -99,11 +129,12 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .description img {
-    width : 70%;
+    height : 60%;
+    width: auto;
   }
 
   
@@ -111,6 +142,9 @@ body {
     opacity: 1;
   }  
 
+  #contact h1{
+    font-size: 250%;
+  }
 
   /* Styles pour les appareils mobiles */
 @media only screen and (max-width: 767px) {
