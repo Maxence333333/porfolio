@@ -146,20 +146,20 @@ body {
     font-size: 250%;
   }
 
-  /* Styles pour les appareils mobiles */
-/* Styles pour les appareils mobiles */
+
 @media only screen and (max-width: 767px) {
 
-  /* Menu de navigation */
+nav {
+height: 30%;
+}
+
   nav ul {
     flex-direction: column;
   }
-
   nav li {
     margin: 0.5rem 0;
   }
 
-  /* Présentation */
   .left {
     float: none;
     width: 100%;
@@ -168,7 +168,15 @@ body {
   .right {
     float: none;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 30%;
+  }
+
+  #presentation{
+    margin-top: 30%;
+  }
+
+  #presentation p{
+    width: 100%;
   }
 
   /* Projets */
@@ -180,13 +188,13 @@ body {
 
   .projet {
     width: 100%;
-    margin: 2rem 0;
+    margin:0;
     transition: all 0s ease-in-out;
   }
 
   .projet img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .description {
@@ -202,6 +210,9 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
+    width : auto;
+    height: auto;
+
     transition: all 0.5s ease-in-out;
   }
 
