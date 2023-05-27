@@ -181,11 +181,12 @@ body {
   .projet {
     width: 100%;
     margin: 2rem 0;
+    transition: all 0s ease-in-out;
   }
 
   .projet img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
 
   .description {
