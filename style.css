@@ -228,7 +228,7 @@ body {
     width : 100%;
   }
 
-  .projet:hover .description {
+  .projet::before .description {
     opacity: 1;
   }
 
