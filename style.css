@@ -187,7 +187,7 @@ body {
   #projets {
     width: 100%;
     z-index: 0;
-    margin-top: 15%;
+    margin-left : 0%;
   }
 
   .projet {
@@ -247,5 +247,10 @@ body {
   input[type="submit"] {
     margin-top: 1rem;
   }
-
+  .info {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
 }
