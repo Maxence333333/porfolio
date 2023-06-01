@@ -15,12 +15,3 @@ menuItems.forEach(item => {
     section.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  var image = document.querySelector(".PhotoProjet");
-  var info = document.querySelector(".description");
-
-  image.addEventListener("click", function() {
-    info.classList.toggle("show");
-  });
-});

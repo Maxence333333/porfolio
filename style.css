@@ -216,7 +216,7 @@ body {
     width : 100%;
     height: 100%;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0s ease-in-out;
   }
 
   .description img {
@@ -246,11 +246,5 @@ body {
 
   input[type="submit"] {
     margin-top: 1rem;
-  }
-  .info {
-    display: none;
-  }
-  .show {
-    display: block;
   }
 }
