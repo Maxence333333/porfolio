@@ -129,7 +129,7 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.0s ease-in-out;
   }
 
   .description img {
@@ -216,7 +216,7 @@ body {
     width : 100%;
     height: 100%;
 
-    transition: all 0s ease-in-out;
+    transition: all 0.0s ease-in-out;
   }
 
   .description img {
@@ -228,7 +228,7 @@ body {
     width : 100%;
   }
 
-  .projet::before .description {
+  .projet:hover .description {
     opacity: 1;
   }
 
